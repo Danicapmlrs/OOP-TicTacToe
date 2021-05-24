@@ -17,19 +17,28 @@ namespace OOP_TicTacToe
             InitializeComponent();
         }
 
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        private void Btn_Click(object sender, EventArgs e)
         {
-
+            Button b = (Button)sender;
+            b.Text="X";
         }
-           
+
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
+            if (e.ClickedItem == HelpMenu)
+            {
+                MessageBox.Show("Instructions");
+            }
+            else if (e.ClickedItem == AboutMenu)
+            {
+                MessageBox.Show("The Program is about");
+            }
+               
         }
 
-        private void MenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void ExitDrop_Click(object sender, EventArgs e)
         {
-
+            System.Windows.Forms.Application.Exit();
         }
     }
 }
