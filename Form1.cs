@@ -27,11 +27,16 @@ namespace OOP_TicTacToe
         {
             if (e.ClickedItem == HelpMenu)
             {
-                MessageBox.Show("Instructions");
+                MessageBox.Show("Like an ordinary Tic Tac Toe or Noughts and Crosses, the players will alternately" +
+                    " place O and X on the squares by clicking the buttons, until the row is completed vertically" +
+                    ",horizontally or diagonally by a player. If a player succesfully draw straight X or O in a row," +
+                    " then that player wins. You may press, File->New Game, to start a new game. Press Exit to exit the game.","Help");
             }
             else if (e.ClickedItem == AboutMenu)
             {
-                MessageBox.Show("The Program is about");
+                MessageBox.Show("Tic Tac Toe, Noughts and Crosses, Xs and Os." +
+                    "A free game, child-friendly and enjoyable game you can access anytime." +
+                    " This game is created and programmed by Danica G. Pamoleras.","About");
             }
                
         }
