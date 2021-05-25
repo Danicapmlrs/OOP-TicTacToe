@@ -19,8 +19,53 @@ namespace OOP_TicTacToe
         }
         private void Winner()
         {
+            //first vertical column
             bool is_winner = false;
 
+            if ((BtnA1.Text== BtnB1.Text) && (BtnB1.Text==BtnC1.Text) && (BtnA1.Enabled == false))
+            {
+                is_winner = true;
+            }
+            //second vertical column
+            if ((BtnA2.Text==BtnB2.Text) && (BtnB2.Text==BtnC2.Text) && (BtnA2.Enabled == false))
+            {
+                is_winner = true;
+            }
+            //third vertical column
+            if ((BtnA3.Text==BtnB3.Text) && (BtnB3.Text==BtnC3.Text) && (BtnA3.Enabled == false))
+            {
+                is_winner = true;
+            }
+
+            //first horizontal row
+            if ((BtnA1.Text==BtnA2.Text) && (BtnA2.Text==BtnA3.Text) && (BtnA1.Enabled == false))
+            {
+                is_winner = true;
+            }
+            //second horizontal row
+            if ((BtnB1.Text==BtnB2.Text) && (BtnB2.Text==BtnB3.Text) && (BtnB1.Enabled == false))
+            {
+                is_winner = true;
+            }
+            if ((BtnC1.Text==BtnC2.Text) && (BtnC2.Text==BtnC3.Text) && (BtnC1.Enabled == false))
+            {
+                is_winner = true;
+            }
+            //first diagonal
+            if ((BtnA1.Text == BtnB2.Text) && (BtnB2.Text == BtnC3.Text) && (BtnA1.Enabled == false))
+            {
+                is_winner = true;
+            }
+            //second diagonal
+            if ((BtnA3.Text==BtnB2.Text) && (BtnB2.Text==BtnC1.Text) && (BtnA3.Enabled == false))
+            {
+                is_winner = true;
+            }
+
+            if (is_winner)
+            {
+                MessageBox.Show("Winner, winnner, chicken dinner");
+            }
 
         }
         private void Btn_Click(object sender, EventArgs e)
