@@ -12,15 +12,33 @@ namespace OOP_TicTacToe
 {
     public partial class TicTacToe_Game : Form
     {
+        bool Player_Turn = true;
         public TicTacToe_Game()
         {
             InitializeComponent();
         }
+        private void Winner()
+        {
+            bool is_winner = false;
 
+
+        }
         private void Btn_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            b.Text="X";
+            if (Player_Turn == true)
+            {
+                b.Text="X";
+                b.Enabled = false;
+            }
+            else
+            {
+                b.Text = "O";
+                b.Enabled = false;
+            }
+            Player_Turn = !Player_Turn;
+
+            Winner();
         }
 
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
