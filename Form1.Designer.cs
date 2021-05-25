@@ -75,6 +75,7 @@ namespace OOP_TicTacToe
             this.Newgamedrop.Name = "Newgamedrop";
             this.Newgamedrop.Size = new System.Drawing.Size(165, 26);
             this.Newgamedrop.Text = "New Game";
+            this.Newgamedrop.Click += new System.EventHandler(this.Newgamedrop_Click);
             // 
             // ExitDrop
             // 
@@ -101,6 +102,7 @@ namespace OOP_TicTacToe
             this.BtnA1.Name = "BtnA1";
             this.BtnA1.Size = new System.Drawing.Size(94, 90);
             this.BtnA1.TabIndex = 1;
+            this.BtnA1.Tag = "\"board\"";
             this.BtnA1.UseVisualStyleBackColor = true;
             this.BtnA1.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -110,6 +112,7 @@ namespace OOP_TicTacToe
             this.BtnA2.Name = "BtnA2";
             this.BtnA2.Size = new System.Drawing.Size(94, 90);
             this.BtnA2.TabIndex = 2;
+            this.BtnA2.Tag = "\"board\"";
             this.BtnA2.UseVisualStyleBackColor = true;
             this.BtnA2.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -119,6 +122,7 @@ namespace OOP_TicTacToe
             this.BtnA3.Name = "BtnA3";
             this.BtnA3.Size = new System.Drawing.Size(94, 90);
             this.BtnA3.TabIndex = 3;
+            this.BtnA3.Tag = "\"board\"";
             this.BtnA3.UseVisualStyleBackColor = true;
             this.BtnA3.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -128,6 +132,7 @@ namespace OOP_TicTacToe
             this.BtnB1.Name = "BtnB1";
             this.BtnB1.Size = new System.Drawing.Size(94, 90);
             this.BtnB1.TabIndex = 4;
+            this.BtnB1.Tag = "\"board\"";
             this.BtnB1.UseVisualStyleBackColor = true;
             this.BtnB1.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -137,6 +142,7 @@ namespace OOP_TicTacToe
             this.BtnB2.Name = "BtnB2";
             this.BtnB2.Size = new System.Drawing.Size(94, 90);
             this.BtnB2.TabIndex = 5;
+            this.BtnB2.Tag = "\"board\"";
             this.BtnB2.UseVisualStyleBackColor = true;
             this.BtnB2.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -146,6 +152,7 @@ namespace OOP_TicTacToe
             this.BtnB3.Name = "BtnB3";
             this.BtnB3.Size = new System.Drawing.Size(94, 90);
             this.BtnB3.TabIndex = 6;
+            this.BtnB3.Tag = "\"board\"";
             this.BtnB3.UseVisualStyleBackColor = true;
             this.BtnB3.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -155,6 +162,7 @@ namespace OOP_TicTacToe
             this.BtnC1.Name = "BtnC1";
             this.BtnC1.Size = new System.Drawing.Size(94, 90);
             this.BtnC1.TabIndex = 7;
+            this.BtnC1.Tag = "\"board\"";
             this.BtnC1.UseVisualStyleBackColor = true;
             this.BtnC1.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -164,6 +172,7 @@ namespace OOP_TicTacToe
             this.BtnC2.Name = "BtnC2";
             this.BtnC2.Size = new System.Drawing.Size(94, 90);
             this.BtnC2.TabIndex = 8;
+            this.BtnC2.Tag = "\"board\"";
             this.BtnC2.UseVisualStyleBackColor = true;
             this.BtnC2.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -173,6 +182,7 @@ namespace OOP_TicTacToe
             this.BtnC3.Name = "BtnC3";
             this.BtnC3.Size = new System.Drawing.Size(94, 90);
             this.BtnC3.TabIndex = 9;
+            this.BtnC3.Tag = "\"board\"";
             this.BtnC3.UseVisualStyleBackColor = true;
             this.BtnC3.Click += new System.EventHandler(this.Btn_Click);
             // 

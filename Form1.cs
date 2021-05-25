@@ -13,6 +13,8 @@ namespace OOP_TicTacToe
     public partial class TicTacToe_Game : Form
     {
         bool Player_Turn = true;
+        int Player_Turn_Count = 0;
+
         public TicTacToe_Game()
         {
             InitializeComponent();
@@ -62,11 +64,29 @@ namespace OOP_TicTacToe
                 is_winner = true;
             }
 
+            if (Player_Turn_Count == 9)
+            {
+                MessageBox.Show("Draw!!!!!");
+                reset_game();
+            }
             if (is_winner)
             {
                 MessageBox.Show("Winner, winnner, chicken dinner");
+                reset_game();
             }
 
+        }
+        private void reset_game()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is Button)
+                {
+                    Button b = (Button)c;
+                    b.Enabled = true;
+                    b.Text = "";
+                }
+            }
         }
         private void Btn_Click(object sender, EventArgs e)
         {
@@ -83,6 +103,7 @@ namespace OOP_TicTacToe
             }
             Player_Turn = !Player_Turn;
 
+            Player_Turn_Count++;
             Winner();
         }
 
@@ -107,6 +128,11 @@ namespace OOP_TicTacToe
         private void ExitDrop_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void Newgamedrop_Click(object sender, EventArgs e)
+        {
+            reset_game();
         }
     }
 }
