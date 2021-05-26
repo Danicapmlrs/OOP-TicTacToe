@@ -87,6 +87,9 @@ namespace OOP_TicTacToe
                     b.Text = "";
                 }
             }
+
+            Player_Turn_Count = 0;
+            Player_Turn = false;
         }
         private void Btn_Click(object sender, EventArgs e)
         {
