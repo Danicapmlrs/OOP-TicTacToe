@@ -124,6 +124,7 @@ namespace OOP_TicTacToe
             // 
             // BtnA3
             // 
+            this.BtnA3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.BtnA3.Location = new System.Drawing.Point(249, 48);
             this.BtnA3.Name = "BtnA3";
             this.BtnA3.Size = new System.Drawing.Size(94, 90);
@@ -232,7 +233,7 @@ namespace OOP_TicTacToe
             this.lblX.ForeColor = System.Drawing.Color.Cyan;
             this.lblX.Location = new System.Drawing.Point(29, 393);
             this.lblX.Name = "lblX";
-            this.lblX.Size = new System.Drawing.Size(39, 38);
+            this.lblX.Size = new System.Drawing.Size(38, 37);
             this.lblX.TabIndex = 13;
             this.lblX.Text = "0";
             // 
@@ -243,7 +244,7 @@ namespace OOP_TicTacToe
             this.lbldraw.ForeColor = System.Drawing.Color.White;
             this.lbldraw.Location = new System.Drawing.Point(157, 393);
             this.lbldraw.Name = "lbldraw";
-            this.lbldraw.Size = new System.Drawing.Size(39, 38);
+            this.lbldraw.Size = new System.Drawing.Size(38, 37);
             this.lbldraw.TabIndex = 14;
             this.lbldraw.Text = "0";
             // 
@@ -254,7 +255,7 @@ namespace OOP_TicTacToe
             this.lblO.ForeColor = System.Drawing.Color.Yellow;
             this.lblO.Location = new System.Drawing.Point(304, 393);
             this.lblO.Name = "lblO";
-            this.lblO.Size = new System.Drawing.Size(39, 38);
+            this.lblO.Size = new System.Drawing.Size(38, 37);
             this.lblO.TabIndex = 15;
             this.lblO.Text = "0";
             // 
