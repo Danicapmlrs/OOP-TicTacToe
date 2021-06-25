@@ -96,6 +96,7 @@ namespace OOP_TicTacToe
                     Button b = (Button)c;
                     b.Enabled = true;
                     b.Text = "";
+                    b.BackColor = Color.Gainsboro;
                 }
             }
 
@@ -108,13 +109,16 @@ namespace OOP_TicTacToe
             if (Player_Turn == true)
             {
                 b.Text="X";
+                b.BackColor = Color.DarkOrange;
                 b.Enabled = false;
             }
             else
             {
                 b.Text = "O";
+                b.BackColor = Color.RoyalBlue;
                 b.Enabled = false;
             }
+
             Player_Turn = !Player_Turn;
 
             Player_Turn_Count++;
