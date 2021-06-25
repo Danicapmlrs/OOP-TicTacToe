@@ -44,6 +44,12 @@ namespace OOP_TicTacToe
             this.BtnC1 = new System.Windows.Forms.Button();
             this.BtnC2 = new System.Windows.Forms.Button();
             this.BtnC3 = new System.Windows.Forms.Button();
+            this.lblXscore = new System.Windows.Forms.Label();
+            this.lbldrawscr = new System.Windows.Forms.Label();
+            this.lblOscr = new System.Windows.Forms.Label();
+            this.lblX = new System.Windows.Forms.Label();
+            this.lbldraw = new System.Windows.Forms.Label();
+            this.lblO = new System.Windows.Forms.Label();
             this.MenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +62,7 @@ namespace OOP_TicTacToe
             this.AboutMenu});
             this.MenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip1.Name = "MenuStrip1";
-            this.MenuStrip1.Size = new System.Drawing.Size(377, 28);
+            this.MenuStrip1.Size = new System.Drawing.Size(370, 28);
             this.MenuStrip1.TabIndex = 0;
             this.MenuStrip1.Text = "menuStrip1";
             this.MenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -98,7 +104,7 @@ namespace OOP_TicTacToe
             // 
             // BtnA1
             // 
-            this.BtnA1.Location = new System.Drawing.Point(30, 86);
+            this.BtnA1.Location = new System.Drawing.Point(29, 48);
             this.BtnA1.Name = "BtnA1";
             this.BtnA1.Size = new System.Drawing.Size(94, 90);
             this.BtnA1.TabIndex = 1;
@@ -108,7 +114,7 @@ namespace OOP_TicTacToe
             // 
             // BtnA2
             // 
-            this.BtnA2.Location = new System.Drawing.Point(140, 86);
+            this.BtnA2.Location = new System.Drawing.Point(139, 48);
             this.BtnA2.Name = "BtnA2";
             this.BtnA2.Size = new System.Drawing.Size(94, 90);
             this.BtnA2.TabIndex = 2;
@@ -118,7 +124,7 @@ namespace OOP_TicTacToe
             // 
             // BtnA3
             // 
-            this.BtnA3.Location = new System.Drawing.Point(250, 86);
+            this.BtnA3.Location = new System.Drawing.Point(249, 48);
             this.BtnA3.Name = "BtnA3";
             this.BtnA3.Size = new System.Drawing.Size(94, 90);
             this.BtnA3.TabIndex = 3;
@@ -128,7 +134,7 @@ namespace OOP_TicTacToe
             // 
             // BtnB1
             // 
-            this.BtnB1.Location = new System.Drawing.Point(30, 191);
+            this.BtnB1.Location = new System.Drawing.Point(29, 153);
             this.BtnB1.Name = "BtnB1";
             this.BtnB1.Size = new System.Drawing.Size(94, 90);
             this.BtnB1.TabIndex = 4;
@@ -138,7 +144,7 @@ namespace OOP_TicTacToe
             // 
             // BtnB2
             // 
-            this.BtnB2.Location = new System.Drawing.Point(140, 191);
+            this.BtnB2.Location = new System.Drawing.Point(139, 153);
             this.BtnB2.Name = "BtnB2";
             this.BtnB2.Size = new System.Drawing.Size(94, 90);
             this.BtnB2.TabIndex = 5;
@@ -148,7 +154,7 @@ namespace OOP_TicTacToe
             // 
             // BtnB3
             // 
-            this.BtnB3.Location = new System.Drawing.Point(250, 191);
+            this.BtnB3.Location = new System.Drawing.Point(249, 153);
             this.BtnB3.Name = "BtnB3";
             this.BtnB3.Size = new System.Drawing.Size(94, 90);
             this.BtnB3.TabIndex = 6;
@@ -158,7 +164,7 @@ namespace OOP_TicTacToe
             // 
             // BtnC1
             // 
-            this.BtnC1.Location = new System.Drawing.Point(30, 299);
+            this.BtnC1.Location = new System.Drawing.Point(29, 261);
             this.BtnC1.Name = "BtnC1";
             this.BtnC1.Size = new System.Drawing.Size(94, 90);
             this.BtnC1.TabIndex = 7;
@@ -168,7 +174,7 @@ namespace OOP_TicTacToe
             // 
             // BtnC2
             // 
-            this.BtnC2.Location = new System.Drawing.Point(140, 299);
+            this.BtnC2.Location = new System.Drawing.Point(139, 261);
             this.BtnC2.Name = "BtnC2";
             this.BtnC2.Size = new System.Drawing.Size(94, 90);
             this.BtnC2.TabIndex = 8;
@@ -178,7 +184,7 @@ namespace OOP_TicTacToe
             // 
             // BtnC3
             // 
-            this.BtnC3.Location = new System.Drawing.Point(251, 299);
+            this.BtnC3.Location = new System.Drawing.Point(250, 261);
             this.BtnC3.Name = "BtnC3";
             this.BtnC3.Size = new System.Drawing.Size(94, 90);
             this.BtnC3.TabIndex = 9;
@@ -186,12 +192,84 @@ namespace OOP_TicTacToe
             this.BtnC3.UseVisualStyleBackColor = true;
             this.BtnC3.Click += new System.EventHandler(this.Btn_Click);
             // 
+            // lblXscore
+            // 
+            this.lblXscore.AutoSize = true;
+            this.lblXscore.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblXscore.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblXscore.Location = new System.Drawing.Point(0, 367);
+            this.lblXscore.Name = "lblXscore";
+            this.lblXscore.Size = new System.Drawing.Size(100, 26);
+            this.lblXscore.TabIndex = 10;
+            this.lblXscore.Text = "X SCORE";
+            // 
+            // lbldrawscr
+            // 
+            this.lbldrawscr.AutoSize = true;
+            this.lbldrawscr.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbldrawscr.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbldrawscr.Location = new System.Drawing.Point(106, 367);
+            this.lbldrawscr.Name = "lbldrawscr";
+            this.lbldrawscr.Size = new System.Drawing.Size(150, 26);
+            this.lbldrawscr.TabIndex = 11;
+            this.lbldrawscr.Text = "DRAW SCORE";
+            // 
+            // lblOscr
+            // 
+            this.lblOscr.AutoSize = true;
+            this.lblOscr.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblOscr.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblOscr.Location = new System.Drawing.Point(270, 367);
+            this.lblOscr.Name = "lblOscr";
+            this.lblOscr.Size = new System.Drawing.Size(100, 26);
+            this.lblOscr.TabIndex = 12;
+            this.lblOscr.Text = "O SCORE";
+            // 
+            // lblX
+            // 
+            this.lblX.AutoSize = true;
+            this.lblX.Font = new System.Drawing.Font("Broadway", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblX.ForeColor = System.Drawing.Color.Cyan;
+            this.lblX.Location = new System.Drawing.Point(29, 393);
+            this.lblX.Name = "lblX";
+            this.lblX.Size = new System.Drawing.Size(39, 38);
+            this.lblX.TabIndex = 13;
+            this.lblX.Text = "0";
+            // 
+            // lbldraw
+            // 
+            this.lbldraw.AutoSize = true;
+            this.lbldraw.Font = new System.Drawing.Font("Broadway", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbldraw.ForeColor = System.Drawing.Color.White;
+            this.lbldraw.Location = new System.Drawing.Point(157, 393);
+            this.lbldraw.Name = "lbldraw";
+            this.lbldraw.Size = new System.Drawing.Size(39, 38);
+            this.lbldraw.TabIndex = 14;
+            this.lbldraw.Text = "0";
+            // 
+            // lblO
+            // 
+            this.lblO.AutoSize = true;
+            this.lblO.Font = new System.Drawing.Font("Broadway", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblO.ForeColor = System.Drawing.Color.Yellow;
+            this.lblO.Location = new System.Drawing.Point(304, 393);
+            this.lblO.Name = "lblO";
+            this.lblO.Size = new System.Drawing.Size(39, 38);
+            this.lblO.TabIndex = 15;
+            this.lblO.Text = "0";
+            // 
             // TicTacToe_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(377, 450);
+            this.ClientSize = new System.Drawing.Size(370, 450);
+            this.Controls.Add(this.lblO);
+            this.Controls.Add(this.lbldraw);
+            this.Controls.Add(this.lblX);
+            this.Controls.Add(this.lblOscr);
+            this.Controls.Add(this.lbldrawscr);
+            this.Controls.Add(this.lblXscore);
             this.Controls.Add(this.BtnC3);
             this.Controls.Add(this.BtnC2);
             this.Controls.Add(this.BtnC1);
@@ -230,6 +308,12 @@ namespace OOP_TicTacToe
         private System.Windows.Forms.Button BtnC3;
         private System.Windows.Forms.ToolStripMenuItem Newgamedrop;
         private System.Windows.Forms.ToolStripMenuItem ExitDrop;
+        private System.Windows.Forms.Label lblXscore;
+        private System.Windows.Forms.Label lbldrawscr;
+        private System.Windows.Forms.Label lblOscr;
+        private System.Windows.Forms.Label lblX;
+        private System.Windows.Forms.Label lbldraw;
+        private System.Windows.Forms.Label lblO;
     }
 }
 

@@ -67,11 +67,12 @@ namespace OOP_TicTacToe
             if (Player_Turn_Count == 9)
             {
                 MessageBox.Show("Draw!!!!!");
+                lbldraw.Text = (Int32.Parse(lbldraw.Text) + 1).ToString();
                 reset_game();
             }
             if (is_winner)
             {
-                MessageBox.Show("Winner, winnner, chicken dinner");
+                MessageBox.Show("WINNER WINNER CHICKEN DINNER!");
                 reset_game();
             }
 
@@ -98,11 +99,13 @@ namespace OOP_TicTacToe
             {
                 b.Text="X";
                 b.Enabled = false;
+                lblX.Text = (Int32.Parse(lblX.Text) + 1).ToString();
             }
             else
             {
                 b.Text = "O";
                 b.Enabled = false;
+                lblO.Text = (Int32.Parse(lblO.Text) + 1).ToString();
             }
             Player_Turn = !Player_Turn;
 
