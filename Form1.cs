@@ -101,7 +101,7 @@ namespace OOP_TicTacToe
             }
 
             Player_Turn_Count = 0;
-            Player_Turn = false;
+            Player_Turn = true;
         }
         private void Btn_Click(object sender, EventArgs e)
         {
